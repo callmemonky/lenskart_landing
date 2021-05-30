@@ -5,6 +5,7 @@ import Button from '../components/Button';
 import Mirzapur from '../assets/images/mirzapur-title.png';
 
 import sunglasses2 from '../assets/images/sunglasses2.png';
+import amazon from '../assets/images/prime_video.png';
 
 function Header() {
   return (
@@ -20,9 +21,40 @@ function Header() {
             }}
           >
             <div
-              style={{ borderRight: 'solid 1px white', marginRight: '20px' }}
+              style={{
+                borderRight: 'solid 1px white',
+                marginRight: '20px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
             >
-              <img src={Mirzapur} style={{ width: '230px' }} />
+              <div>
+                <img src={Mirzapur} style={{ width: '230px' }} />
+              </div>
+              <div
+                style={{
+                  display: 'flex',
+                  flexDirection: 'row',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}
+              >
+                <p
+                  style={{
+                    color: 'white',
+                    fontWeight: 400,
+                    borderRight: 'solid 1px white',
+                    paddingRight: '8px',
+                    marginRight: '8px',
+                  }}
+                >
+                  STREAM{' '}
+                  <span style={{ color: 'white', fontWeight: 700 }}>NOW</span>
+                </p>
+                <img src={amazon} alt='' style={{ width: '80px' }} />
+              </div>
             </div>
             <div>
               <p
