@@ -1,0 +1,26 @@
+.container {
+  width: 100vw;
+  height: 35vh;
+  background-color: black;
+  color: wheat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner {
+  height: 100%;
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  background-image: url(../../assets//images/footer.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+}
